@@ -7,7 +7,7 @@ const note_container=document.querySelector(".note-container");
 
 newnote_button.addEventListener("click",(()=>{
     // alert("hyy")
-
+    value="";
     const note_box=document.createElement("div");
     note_box.classList.add("note");
     note_container.appendChild(note_box);
@@ -26,7 +26,7 @@ newnote_button.addEventListener("click",(()=>{
         
         
         const note_menubar=document.createElement("h3");
-    note_menubar.classList.add('note_menubar');
+        note_menubar.classList.add('note_menubar');
 		note_menubar.innerHTML = '&#x2026';
 		note_header.appendChild(note_menubar); 
         
@@ -62,7 +62,7 @@ note_box.appendChild(note_input_container);
    const enter_note=document.createElement("input");
     enter_note.classList.add('enter_note_text');
     enter_note.type = 'text';
-    enter_note.value = "Enter Note";
+    enter_note.value = "";
     note_input_container.appendChild(enter_note);
     
     const note_save = document.createElement('button');
@@ -83,7 +83,6 @@ note_box.appendChild(note_input_container);
             note_input_container.style.display="none";
         })
         
-        
         note_save.addEventListener("click",(e)=>{
             e.preventDefault();
             // alert("hyy");
@@ -101,7 +100,7 @@ note_box.appendChild(note_input_container);
           note_list_point_remove.classList.add("note_list_point_remove");
           note_list_point_remove.innerHTML="&#10006;";
           note_list.appendChild(note_list_point_remove);
-          enter_note.value = "Enter Note";
+          
           note_input_container.style.display="none";
 
 
@@ -120,7 +119,7 @@ note_box.appendChild(note_input_container);
         })
 
         })
-
+     
         // For background change and delete of note card
         // const istrue=menubar_option_holder.style.display="none";
     
