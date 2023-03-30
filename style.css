@@ -208,3 +208,30 @@ main{
     background: transparent;
     font-weight: 600;
 }
+.welcome_note{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color:rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    width: 100%;
+    position: relative;
+    bottom:0%;
+}
+footer>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing:.05rem;
+    color: var(--black);
+}
+footer>div>span{
+    color:#f95f35;
+    margin-left: .1rem;
+}
