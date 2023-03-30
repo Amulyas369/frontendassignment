@@ -235,3 +235,11 @@ footer>div>span{
     color:#f95f35;
     margin-left: .1rem;
 }
+@media screen and (max-width: 680px) {
+    .welcome_note {
+      font-size: 1.2rem;
+    }
+    footer>div{
+        font-size: .8rem;
+    }
+  }
